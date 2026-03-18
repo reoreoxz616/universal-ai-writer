@@ -1,7 +1,75 @@
+
 # Universal AI Writer
 
-Universal AI Writer は、どんな Web サイトの入力欄でも AI による文章生成・添削ができる Chrome 拡張です。  
-サイドバーからすぐに文章を生成でき、テンプレート管理や履歴保存など、実用的な機能を多数搭載しています。
+A Chrome extension that enables AI-powered writing, rewriting, and text continuation on any website.  
+どんな Web サイトでも AI による文章生成・添削・続き生成ができる Chrome 拡張です。
+
+---
+# 🌐 English
+
+## ✨ Features
+- 📝 **AI Text Generation**  
+  Generate text using customizable templates and prompts.
+
+- ➕ **Continue Writing**  
+  Reads the active input field and generates a natural continuation.
+
+- 🔧 **Proofreading Mode**  
+  Rewrites text to be clearer and more natural.
+
+- 📚 **Template Management (with categories)**  
+  Add and organize your own templates.
+
+- 🎛 **Model Selection**  
+  Supports GPT-4o / GPT-4.1 / mini models.
+
+- 🕒 **History Saving**  
+  Automatically saves generated text for reuse.
+
+- 🖥 **ChromeOS Support**  
+  Works smoothly on Chromebooks.
+
+---
+
+## 📥 Installation
+1. Go to the **Releases** section of this repository  
+2. Download the latest ZIP (`universal-ai-writer.zip`)  
+3. Extract the ZIP  
+4. Open `chrome://extensions/`  
+5. Enable **Developer mode**  
+6. Click **Load unpacked**  
+7. Select the extracted folder
+
+---
+
+## 📸 Screenshots
+
+> Place your screenshots in a `screenshots/` folder and reference them here.
+
+### Sidebar  
+![Sidebar](screenshots/sidebar.png)
+
+### Options Page  
+![Options](screenshots/options.png)
+
+### Text Generation Example  
+![Generate](screenshots/generate.png)
+
+---
+
+## 📦 Folder Structure
+universal-ai-writer/
+├── manifest.json
+├── background.js
+├── content.js
+├── sidepanel.html
+├── sidepanel.js
+├── options.html
+├── options.js
+└── icons/
+├── 16.png
+├── 48.png
+└── 128.png
 
 ---
 ## ✨ 主な機能
