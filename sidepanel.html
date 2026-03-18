@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universal AI Writer</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 8px;
+        font-size: 14px;
+      }
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 80px;
+        margin-bottom: 8px;
+      }
+      button {
+        margin-right: 4px;
+        margin-bottom: 8px;
+      }
+      #history div {
+        border: 1px solid #ccc;
+        padding: 6px;
+        margin-bottom: 6px;
+        cursor: pointer;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Universal AI Writer</h2>
+
+    <h3>プロンプト</h3>
+    <textarea id="prompt" placeholder="生成したい内容の指示を入力"></textarea>
+
+    <h3>カテゴリ</h3>
+    <select id="categorySelect"></select>
+
+    <h3>テンプレート</h3>
+    <select id="templateSelect"></select>
+
+    <div>
+      <button id="generate">生成</button>
+      <button id="continue">続き生成</button>
+      <button id="proofread">添削</button>
+    </div>
+
+    <h3>結果</h3>
+    <textarea id="result"></textarea>
+    <button id="insert">ページに挿入</button>
+
+    <h3>履歴</h3>
+    <div id="history"></div>
+
+    <script src="sidepanel.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Universal AI Writer 設定</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 16px;
+        font-size: 14px;
+      }
+      textarea {
+        width: 100%;
+        box-sizing: border-box;
+        min-height: 60px;
+      }
+      input,
+      select {
+        width: 100%;
+        box-sizing: border-box;
+        margin-bottom: 8px;
+      }
+      button {
+        margin-top: 8px;
+      }
+      #templateList div {
+        border: 1px solid #ccc;
+        padding: 6px;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Universal AI Writer 設定</h2>
+
+    <h3>APIキー</h3>
+    <input id="apiKey" type="password" placeholder="OpenAI API Key" />
+
+    <h3>AI モデル</h3>
+    <select id="model">
+      <option value="gpt-4o-mini">GPT-4o mini</option>
+      <option value="gpt-4o">GPT-4o</option>
+      <option value="gpt-4.1">GPT-4.1</option>
+      <option value="gpt-4.1-mini">GPT-4.1 mini</option>
+    </select>
+
+    <h3>トーン</h3>
+    <select id="tone">
+      <option value="polite">丁寧</option>
+      <option value="casual">カジュアル</option>
+    </select>
+
+    <h3>文章の長さ</h3>
+    <select id="length">
+      <option value="short">短く</option>
+      <option value="medium">普通</option>
+      <option value="long">長く</option>
+    </select>
+
+    <button id="save">設定を保存</button>
+
+    <hr />
+
+    <h3>テンプレート一覧</h3>
+    <div id="templateList"></div>
+
+    <h3>テンプレート追加</h3>
+    <input id="templateCategory" placeholder="カテゴリ（例：メール）" />
+    <input id="templateName" placeholder="テンプレート名" />
+    <textarea
+      id="templateText"
+      placeholder="テンプレート内容（{{tone}} {{length}} {{input}} が使えます）"
+    ></textarea>
+    <button id="addTemplate">テンプレート追加</button>
+
+    <script src="options.js"></script>
+  </body>
+</html>

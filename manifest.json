@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Universal AI Writer",
+  "version": "1.0.0",
+  "description": "どんな入力欄でもAIで文章生成・添削できるサイドバー拡張",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
